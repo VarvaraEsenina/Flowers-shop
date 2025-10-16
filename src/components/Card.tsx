@@ -1,19 +1,19 @@
 import ErrorFace from "./ErrorFace";
 interface CardComponentProps {
-  title: string ,
-  picture?: string,
-  price: number,
-  key: number,
+  title: string;
+  price: number;
+  key: number;
+  children?: React.ReactNode;
 }
 
-function Card({title, picture, price}: CardComponentProps) {
+function Card({title, price}: CardComponentProps) {
   return (
     <div className="card" style={{ width: "400px" }}>
       <div className="card-img-top p-3">
         <ErrorFace></ErrorFace>
       </div>
       {/* <img src="..." className="card-img-top" alt="..."> */}
-      <div class="card-header"></div>
+      <div className="card-header"></div>
         <div className="card-body">
           <h5 className="fs-1 text-dark">{title}</h5>
           <div className = "card-body">
